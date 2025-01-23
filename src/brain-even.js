@@ -22,7 +22,7 @@ const playBrainEven = () => {
       console.log('Correct!');
     } else {
       console.log(`'yes' is wrong answer ;(. Correct answer was 'no'.\nLet's try again, ${name}!`);
-      break;
+      return;
     }
   }
 
