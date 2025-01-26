@@ -5,7 +5,6 @@ const gcd = (firstNumber, secondNumber) => {
   let num1 = firstNumber;
   let num2 = secondNumber;
 
-  /* Алгоритм Евклида */
   while (num1 !== num2) {
     if (num1 > num2) {
       num1 -= num2;
