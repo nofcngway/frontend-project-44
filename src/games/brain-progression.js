@@ -1,9 +1,8 @@
 import gameEngine from '../index.js';
 import getRandomNumber from '../random.js';
 
-const progression = () => {
+const progression = (startNumber) => {
   const arrNumbers = [];
-  const startNumber = getRandomNumber(1, 100);
   const step = getRandomNumber(1, 50);
   const numbersLength = getRandomNumber(5, 10);
   const hiddenEl = getRandomNumber(0, numbersLength - 1);
@@ -24,7 +23,8 @@ const progression = () => {
 
 const playBrainProgression = () => {
   const getExpressionAndAnswer = () => {
-    const [expression, answer] = progression();
+    const startNumber = getRandomNumber(1, 100);
+    const [expression, answer] = progression(startNumber);
     const result = [expression, answer];
 
     return result;
