@@ -19,7 +19,7 @@ const playBrainCalc = () => {
     const firstNumber = getRandomNumber(1, 50);
     const secondNumber = getRandomNumber(1, 50);
     const operatorList = ['+', '-', '*'];
-    const randomOperator = operatorList[getRandomNumber(0, 2)];
+    const randomOperator = operatorList[getRandomNumber(0, operatorList.length - 1)];
     const expression = `${firstNumber} ${randomOperator} ${secondNumber}`;
     const answer = String(calculate(firstNumber, secondNumber, randomOperator));
     const result = [expression, answer];
