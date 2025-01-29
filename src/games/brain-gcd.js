@@ -1,7 +1,7 @@
 import runGameEngine from '../index.js';
 import getRandomNumber from '../random.js';
 
-const gcd = (firstNumber, secondNumber) => {
+const getGcd = (firstNumber, secondNumber) => {
   let num1 = firstNumber;
   let num2 = secondNumber;
 
@@ -21,7 +21,7 @@ const playBrainGcd = () => {
     const firstNumber = getRandomNumber(1, 100);
     const secondNumber = getRandomNumber(1, 100);
     const expression = `${firstNumber} ${secondNumber}`;
-    const answer = String(gcd(firstNumber, secondNumber));
+    const answer = String(getGcd(firstNumber, secondNumber));
     const result = [expression, answer];
 
     return result;

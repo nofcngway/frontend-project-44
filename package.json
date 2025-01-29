@@ -2,7 +2,7 @@
   "name": "@hexlet/code",
   "type": "module",
   "version": "1.0.0",
-  "description": "[![Actions Status](https://github.com/nofcngway/frontend-project-44/actions/workflows/hexlet-check.yml/badge.svg)](https://github.com/nofcngway/frontend-project-44/actions)",
+  "description": "Набор из пяти игр, включающий проверки на четность, калькулятор, наибольший общий делитель, арифметическая прогрессия и просто ли число.",
   "bin": {
     "brain-games": "bin/brain-games.js",
     "brain-even": "bin/brain-even.js",
