@@ -1,4 +1,4 @@
-import gameEngine from '../index.js';
+import runGameEngine from '../index.js';
 import getRandomNumber from '../random.js';
 
 const isPrimeNumber = (number) => {
@@ -22,7 +22,7 @@ const playBrainPrime = () => {
   };
 
   const description = 'Answer "yes" if given number is prime. Otherwise answer "no".';
-  gameEngine(getExpressionAndAnswer, description);
+  runGameEngine(getExpressionAndAnswer, description);
 };
 
 export default playBrainPrime;

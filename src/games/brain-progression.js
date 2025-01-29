@@ -1,4 +1,4 @@
-import gameEngine from '../index.js';
+import runGameEngine from '../index.js';
 import getRandomNumber from '../random.js';
 
 const progression = (startNumber) => {
@@ -31,7 +31,7 @@ const playBrainProgression = () => {
   };
 
   const description = 'What number is missing in the progression?';
-  gameEngine(getExpressionAndAnswer, description);
+  runGameEngine(getExpressionAndAnswer, description);
 };
 
 export default playBrainProgression;

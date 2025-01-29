@@ -1,6 +1,6 @@
 import readlineSync from 'readline-sync';
 
-const gameEngine = (getExpressionAndAnswer, descriptionGame) => {
+const runGameEngine = (getExpressionAndAnswer, descriptionGame) => {
   console.log('Welcome to the Brain Games!');
   const userName = readlineSync.question('May I have your name? ');
   console.log(`Hello, ${userName}!`);
@@ -22,4 +22,4 @@ const gameEngine = (getExpressionAndAnswer, descriptionGame) => {
   console.log(`Congratulations, ${userName}!`);
 };
 
-export default gameEngine;
+export default runGameEngine;

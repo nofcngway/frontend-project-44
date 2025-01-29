@@ -1,4 +1,4 @@
-import gameEngine from '../index.js';
+import runGameEngine from '../index.js';
 import getRandomNumber from '../random.js';
 
 const playBrainEven = () => {
@@ -11,7 +11,7 @@ const playBrainEven = () => {
   };
 
   const description = 'Answer "yes" if the number is even, otherwise answer "no".';
-  gameEngine(getExpressionAndAnswer, description);
+  runGameEngine(getExpressionAndAnswer, description);
 };
 
 export default playBrainEven;
