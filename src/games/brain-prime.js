@@ -8,7 +8,7 @@ const isPrimeNumber = (number) => {
     }
   }
 
-  return true;
+  return number !== 1 || number > 1;
 };
 
 const playBrainPrime = () => {
