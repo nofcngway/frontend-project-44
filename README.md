@@ -28,8 +28,13 @@
 
 
 ## Демонстрация работы и запуска игры
-- ![Проверка на чётность](https://asciinema.org/a/ewLN6GWAP0ZMWjokZ9GOg6lzr)
-- ![Калькулятор](https://asciinema.org/a/hPQV0erBYGHfJgGjHp9TVag6k)
-- ![Наибольший общий делитель](https://asciinema.org/a/9hwVEg5rY8YklrHgor09L9JTa)
-- ![Арифметическая прогрессия](https://asciinema.org/a/NkVkavcBpw4jSXkM5H61nXIAm)
-- ![Простое ли число?](https://asciinema.org/a/nILBHOFRi7BLz7hu9ejKQXnLH)
+- Проверка на чётность
+[![Проверка на чётность](https://asciinema.org/a/ewLN6GWAP0ZMWjokZ9GOg6lzr.png)](https://asciinema.org/a/ewLN6GWAP0ZMWjokZ9GOg6lzr)
+- Калькулятор
+[![Калькулятор](https://asciinema.org/a/hPQV0erBYGHfJgGjHp9TVag6k.png)](https://asciinema.org/a/hPQV0erBYGHfJgGjHp9TVag6k)
+- Наибольший общий делитель
+[![Наибольший общий делитель](https://asciinema.org/a/9hwVEg5rY8YklrHgor09L9JTa.png)](https://asciinema.org/a/9hwVEg5rY8YklrHgor09L9JTa)
+- Арифметическая прогрессия
+[![Арифметическая прогрессия](https://asciinema.org/a/NkVkavcBpw4jSXkM5H61nXIAm.png)](https://asciinema.org/a/NkVkavcBpw4jSXkM5H61nXIAm)
+- Простое ли число?
+[![Простое ли число?](https://asciinema.org/a/nILBHOFRi7BLz7hu9ejKQXnLH.png)](https://asciinema.org/a/nILBHOFRi7BLz7hu9ejKQXnLH)
