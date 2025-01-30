@@ -10,16 +10,16 @@ const calculate = (firstNumber, secondNumber, operator) => {
     case '*':
       return firstNumber * secondNumber;
     default:
-      return 'error';
+      throw new Error('It is not part of the program.');
   }
 };
 
 const playBrainCalc = () => {
   const getExpressionAndAnswer = () => {
-    const firstNumber = getRandomNumber(1, 50);
-    const secondNumber = getRandomNumber(1, 50);
+    const firstNumber = getRandomNumber(50);
+    const secondNumber = getRandomNumber(50);
     const operatorList = ['+', '-', '*'];
-    const randomOperator = operatorList[getRandomNumber(0, operatorList.length - 1)];
+    const randomOperator = operatorList[getRandomNumber(operatorList.length - 1, 0)];
     const expression = `${firstNumber} ${randomOperator} ${secondNumber}`;
     const answer = String(calculate(firstNumber, secondNumber, randomOperator));
     const result = [expression, answer];

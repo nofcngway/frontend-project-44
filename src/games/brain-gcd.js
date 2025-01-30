@@ -18,8 +18,8 @@ const getGcd = (firstNumber, secondNumber) => {
 
 const playBrainGcd = () => {
   const getExpressionAndAnswer = () => {
-    const firstNumber = getRandomNumber(1, 100);
-    const secondNumber = getRandomNumber(1, 100);
+    const firstNumber = getRandomNumber();
+    const secondNumber = getRandomNumber();
     const expression = `${firstNumber} ${secondNumber}`;
     const answer = String(getGcd(firstNumber, secondNumber));
     const result = [expression, answer];

@@ -6,7 +6,8 @@ const runGameEngine = (getExpressionAndAnswer, descriptionGame) => {
   console.log(`Hello, ${userName}!`);
   console.log(descriptionGame);
 
-  for (let i = 0; i < 3; i += 1) {
+  const questionCount = 3;
+  for (let i = 0; i < questionCount; i += 1) {
     const [expression, answer] = getExpressionAndAnswer();
     console.log(`Question: ${expression}`);
     const answerUser = readlineSync.question('Your answer: ');

@@ -1,31 +1,29 @@
 import runGameEngine from '../index.js';
 import getRandomNumber from '../random.js';
 
-const getProgression = (startNumber) => {
+const getProgression = (startNumber, step, numbersLength) => {
   const arrNumbers = [];
-  const step = getRandomNumber(1, 50);
-  const numbersLength = getRandomNumber(5, 10);
-  const hiddenEl = getRandomNumber(0, numbersLength - 1);
 
-  let numberOnProg = startNumber;
+  let currentNumber = startNumber;
   for (let i = 0; i < numbersLength; i += 1) {
-    arrNumbers.push(numberOnProg);
-    numberOnProg += step;
+    arrNumbers.push(currentNumber);
+    currentNumber += step;
   }
 
-  const correctAnswer = arrNumbers[hiddenEl];
-  arrNumbers[hiddenEl] = '..';
-  const expression = arrNumbers.join(' ');
-  const result = [expression, String(correctAnswer)];
-
-  return result;
+  return arrNumbers;
 };
 
 const playBrainProgression = () => {
   const getExpressionAndAnswer = () => {
-    const startNumber = getRandomNumber(1, 100);
-    const [expression, answer] = getProgression(startNumber);
-    const result = [expression, answer];
+    const startNumber = getRandomNumber();
+    const step = getRandomNumber(50);
+    const numbersLength = getRandomNumber(10, 5);
+    const arrNumbers = getProgression(startNumber, step, numbersLength);
+    const hiddenEl = getRandomNumber(numbersLength - 1, 0);
+    const answer = arrNumbers[hiddenEl];
+    arrNumbers[hiddenEl] = '..';
+    const expression = arrNumbers.join(' ');
+    const result = [expression, String(answer)];
 
     return result;
   };
