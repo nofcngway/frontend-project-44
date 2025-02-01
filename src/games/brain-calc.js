@@ -10,7 +10,7 @@ const calculate = (firstNumber, secondNumber, operator) => {
     case '*':
       return firstNumber * secondNumber;
     default:
-      throw new Error('It is not part of the program.');
+      throw new Error(`Operator "${operator}" is not part of the program.`);
   }
 };
 

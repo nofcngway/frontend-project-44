@@ -8,8 +8,8 @@ const runGameEngine = (getExpressionAndAnswer, descriptionGame) => {
 
   const questionCount = 3;
   for (let i = 0; i < questionCount; i += 1) {
-    const [expression, answer] = getExpressionAndAnswer();
-    console.log(`Question: ${expression}`);
+    const [question, answer] = getExpressionAndAnswer();
+    console.log(`Question: ${question}`);
     const answerUser = readlineSync.question('Your answer: ');
 
     if (answer === answerUser) {

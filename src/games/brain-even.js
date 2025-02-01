@@ -1,15 +1,12 @@
 import runGameEngine from '../index.js';
 import getRandomNumber from '../random.js';
 
-const isEven = (expression) => {
-  const result = (expression % 2 === 0) ? 'yes' : 'no';
-  return result;
-};
+const isEven = (number) => number % 2 === 0;
 
 const playBrainEven = () => {
   const getExpressionAndAnswer = () => {
     const expression = getRandomNumber();
-    const answer = isEven(expression);
+    const answer = isEven(expression) ? 'yes' : 'no';
     const result = [expression, answer];
 
     return result;
